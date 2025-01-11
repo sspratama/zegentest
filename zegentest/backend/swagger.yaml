@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: Todo API
+  description: API untuk autentikasi dan manajemen tugas
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+    description: Development server
+paths:
+  /api/auth/login:
+    post:
+      summary: Login user
+      description: Endpoint untuk login user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        200:
+          description: Login berhasil
+        401:
+          description: Unauthorized
+  /api/todos:
+    get:
+      summary: Mendapatkan daftar tugas
+      responses:
+        200:
+          description: Berhasil mendapatkan daftar tugas
