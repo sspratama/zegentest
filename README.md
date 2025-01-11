@@ -9,7 +9,7 @@ Netlify digunakan sebagai platform untuk melakukan deployment aplikasi frontend.
 
 
 ## Notes
-**Saat ini mengambil token, masukan**
+**Saat ingin mengambil token, masukan**
 {
   "username": "admin",
   "password": "password"
